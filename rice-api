@@ -1,0 +1,630 @@
+
+<!-- **
+  ** -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>大米API-连接无限可能</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <meta name="keywords" content="API,大米API,API接口,API数据,API数据接口,免费API数据接口,API接口管理系统,免费API数据调用,大米博客,大米收款码">
+    <meta name="description" content="我们致力于为用户提供免费、稳定、快速的API数据接口调用服务平台！">
+    <meta itemprop="name" content="大米API">
+    <meta itemprop="image" content="https://cdn.qqsuu.cn/api/img/WeChat.jpg">
+    <meta name="description" itemprop="description" content="我们致力于为用户提供免费、稳定、快速的API数据接口调用服务平台！">
+    <link href="https://www.layuicdn.com/layui/css/layui.css" rel="stylesheet" type="text/css">
+    <link href="https://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.qqsuu.cn/api/css/site.min.css" rel="stylesheet">
+    <style>
+        .main-navbar .navbar-brand.brand-kateapi {
+          background: url(https://cdn.qqsuu.cn/api/img/api.png) no-repeat 0 0; 
+          background-size: contain;
+          webkit-background-size: contain;
+            }
+    </style>
+  </head>
+  <body class="home-template">
+    <header class="site-header">
+      <nav class="navbar navbar-static-top main-navbar" id="top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand brand-kateapi text-hide" href="/">API</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <nav id="bs-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="/">首页</a></li>
+              <li><a href="#about">关于我们</a></li>
+              <li><a href="https://blog.qqsuu.cn" target="_blank">BLOG</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+      <div class="container jumbotron">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Api</h1>
+            <p>免费 稳定 快速的API数据接口调用服务平台<br><span class="package-amount">共收录了 <strong>22</strong> 个接口项目</span></p>
+            <div class="search-wraper" role="search">
+              <div class="form-group">
+                <input class="form-control search clearable" placeholder="搜索API名称，例如：短网址" readonly="readonly">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container protocal-notice hidden-xs">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pull-right" style="color: #339900; cursor:pointer;">
+            拒绝流量劫持，全面使用 HTTPS
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="packages-list-container" id="all-packages">
+      <div class="container">
+        <div class="list-group packages" id="common-packages">
+       <!---     <a href="https://www.bt.cn/" target="_blank" rel="nofollow" title="宝塔服务器面板 - 简单好用的Linux/Windows服务器运维管理面板"><img width="100%" src="https://cdn.qqsuu.cn/api/img/WeChat.jpg"></a>--->
+            <hr>
+          <a href="./html/doc-qrcode.html" class="package list-group-item" target="_blank" alt="二维码生成">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">二维码图片生成 <sup><span class="layui-badge-dot layui-bg-green"></span></sup></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">支持电话 文字 链接的QRAPI</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>114509</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/douyin.html" class="package list-group-item" target="_blank" alt="抖音在线去水印">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">抖音去水印API</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">一键解析多个短视频平台去水印</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>222492</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-pinglun.html" class="package list-group-item" target="_blank" alt="网易云音乐热门评论">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">网易云随机热评</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">网易云音乐热门评论随机API接口</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>109016</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-fengjing.html" class="package list-group-item" target="_blank" alt="随机风景图片API">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">随机风景图片API</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">随机输出一张高分辨率风景图片</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>69342</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-lol.html" class="package list-group-item" target="_blank" alt="随机LOL壁纸API">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">随机LOL壁纸API </h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">随机输出LOL壁纸一张</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>373948</span>
+              </div>
+            </div>
+          </a>
+          <a href="https://pic.qqsuu.cn/index/api.html" class="package list-group-item" target="_blank" alt="全球免费图床API">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">全球免费图床API</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">高可用性的图床API接口</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>659886</span>
+              </div>
+            </div>
+          </a>          
+          <a href="./html/doc-index.html" class="package list-group-item" target="_blank" alt="随机每日一言">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">随机每日一言API</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">每日一条毒鸡汤语句</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>1313033</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-rand.music.html" class="package list-group-item" target="_blank" alt="网易云音乐随机歌曲">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">网易云随机歌曲</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">网易云音乐 随机歌曲输出</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>235899</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-ipinfo.html" class="package list-group-item" target="_blank" alt="IP归属地运营商查询">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">IP归属地运营商查询 <sup><span class="layui-badge-dot layui-bg-orange"></span></sup></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">获取获取IP信息归属地，运营商，地区等</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>16060</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-qq.info.html" class="package list-group-item" target="_blank" alt="获取QQ头像昵称">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">获取QQ头像昵称</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">API获取QQ昵称和头像信息</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>2920115</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-urlsec.html" class="package list-group-item" target="_blank" alt="QQ域名拦截检测API">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">域名拦截检测API  <sup><span class="layui-badge-dot layui-bg-green"></span></sup></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">检测域名在QQ是否拦截</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>11081</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-visitor.html" class="package list-group-item" target="_blank" alt="获取访客相关信息">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">获取访客相关信息 <!--<sup><span class="layui-badge-dot layui-bg-yellow"></span></sup>红色--></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">获取操作系统，浏览器，浏览器版本，访客IP地址，访问时间</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>222492</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-phone.html" class="package list-group-item" target="_blank" alt="手机号归属地查询">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">手机号归属地查询 <sup><span class="layui-badge-dot layui-bg-red"></span></sup></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">查询手机号码位置 精确度达到城市</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>21409</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-ico.html" class="package list-group-item" target="_blank" alt="Favicon图标获取">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">Favicon图标获取</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">获取网站Favicon站标</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>743</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-bing.html" class="package list-group-item" target="_blank" alt="Bing每日图片获取">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">Bing每日图片获取 <sup><span class="layui-badge-dot layui-bg-green"></span></sup></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">获取必应每日高清壁纸</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>77628</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-music.html" class="package list-group-item" target="_blank" alt="网易云/QQ/百度音乐解析">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">网易云/QQ音乐解析</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">在线解析各大平台音乐</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>99023</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-qqcode.html" class="package list-group-item" target="_blank" alt="QQ电脑在线查询">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">QQ电脑在线查询</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">查看QQ好友是否电脑在线</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>14247</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-title.html" class="package list-group-item" target="_blank" alt="获取网站标题">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">获取网站标题</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">获取网站的title</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>108646</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-icp.html" class="package list-group-item" target="_blank" alt="ICP备案查询">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">ICP备案查询</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">在线查询网站ICP备案</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>1816388</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-weather.html" class="package list-group-item" target="_blank" alt="全国天气情况接口">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">全国天气情况接口</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">可查 城市 县区的天气接口</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>12882</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-collect.html" class="package list-group-item" target="_blank" alt="百度收录判断">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">百度收录判断  <sup><span class="layui-badge-dot layui-bg-green"></span></sup></h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">判断网址是否被百度收录</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>29446</span>
+              </div>
+            </div>
+          </a>
+          <a href="./html/doc-site.html" class="package list-group-item" target="_blank" alt="百度收录查询">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 class="package-name">百度收录查询</h4>
+              </div>
+              <div class="col-md-9 hidden-xs">
+                <p class="package-description">查询网站在百度收录个数</p>
+              </div>
+              <div class="package-extra-info col-md-9 col-md-offset-3 col-xs-12">
+                <span><i class="fa fa-star"></i>2484017</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="list-group packages" id="search-results" style="display: none">
+        </div>
+      </div>
+    </main>
+    <footer id="footer" class="footer hidden-print">
+      <div class="container">
+        <div class="row">
+          <div class="footer-about col-md-5 col-sm-12" id="about">
+            <h4>关于 Api</h4>
+            <p>Api 是 <a href="/" target="_blank">大米博客</a> 支持并维护的 API 接口项目，致力于为用户提供稳定、快速的免费 API 接口服务平台。</p>
+            <p>自2019年01月14日上线以来总累计提供数 <font color="#fff">10,049,924</font> 次 API 接口服务。</p>
+      <p>反馈或建议请发送邮件至：<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=58866203@qq.com" target="_blank">58866203@qq.com</a></p>
+          </div>
+          <div class="footer-techs col-md-2 col-sm-12">
+            <h4>联系我们</h4>
+            <ul class="list-unstyled list-inline">
+              <li><a href="">QQ：58866203</a></li><br>
+            </ul>          </div>
+          <div class="footer-links col-md-3 col-sm-12">
+            <h4>友情链接</h4>
+            <ul class="list-unstyled list-inline">
+              <li><a href="/go/pay.htm" target="_blank" title="pay.qqsuu.cn">三合一收款码</a></li><br><br> 
+              <li><a href="/go/php.htm" target="_blank">PHP代码加密</a></li>
+              <li><a href="https://www.lllry.com/" target="_blank">如意</a></li>  </ul>
+          </div>
+          <!--div class="footer-sponsors col-md-2 col-sm-12">
+            <h4>CDN 赞助商</h4>
+            <p>
+              <a href="https://console.upyun.com/register/?invite=ByTbEMrV-" style="border-bottom: none;" target="_blank" rel="nofollow">
+                <img src="https://console.upyun.com/assets/landing/logo.svg" alt="又拍云" style="width: 100%;">
+              </a>
+              <a href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=0g485asj" style="border-bottom: none;" target="_blank" rel="nofollow">
+                <img src="https://img.alicdn.com/tps/TB1BQh7LpXXXXcJXFXXXXXXXXXX-198-46.gif" alt="阿里云" style="width: 100%;">
+              </a>
+            </p>
+          </div-->
+          <div class="footer-techs col-md-2 col-sm-12">
+           <h4>微信扫一扫</h4>
+           <img src="https://cdn.qqsuu.cn/api/img/WeChat.jpg" style="width: 80%;" title="请使用手机微信扫一扫免费体验">
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <span>Copyright&nbsp;&copy;&nbsp;2020&nbsp;<a href="#" target="_blank">APi</a>&nbsp;版权所有</span><a href="http://www.miibeian.gov.cn/" target="_blank"></a>
+      </div>
+    </footer>
+    <a href="#" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://lib.baomitu.com/layer/3.1.1/layer.js"></script>
+    <script src="https://lib.baomitu.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://lib.baomitu.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+    <script src="https://lib.baomitu.com/clipboard.js/1.5.16/clipboard.min.js"></script>
+    <script src="https://lib.baomitu.com/localforage/1.4.2/localforage.min.js"></script>
+    <script src="https://lib.baomitu.com/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="../layer/layer.js"></script>
+<script>
+  //弹出一个页面层
+//layer.msg('Hello');
+//打酱油
+layer.msg('新增：IP归属地运营商查询接口', {icon: 6});
+</script>
+<!-- 百度推送开始 --->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9f4d52cb6d69159962a59b9cc6b6a832";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!--- 百度推送结束 --->
+<!--- 春节灯笼 开始 --->
+<!--春节灯笼代码-->
+<div class="meiha"></div>
+<style>
+/** 梅花树 已删除 **/
+.meiha {
+
+}
+</style>
+<!-- 灯笼1 -->
+<div class="deng-box">
+        <div class="deng">
+                <div class="xian"></div>
+                <div class="deng-a">
+                        <div class="deng-b"><div class="deng-t">节</div></div>
+                </div>
+                <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+        </div>
+</div>
+ 
+<!-- 灯笼2 -->
+<div class="deng-box1">
+        <div class="deng">
+                <div class="xian"></div>
+                <div class="deng-a">
+                        <div class="deng-b"><div class="deng-t">春</div></div>
+                </div>
+                <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+        </div>
+</div>
+<style>
+.deng-box {
+        position: fixed;
+        top: -40px;
+        right: -20px;
+        z-index: 9999;
+        pointer-events: none;
+}
+ 
+.deng-box1 {
+        position: fixed;
+        top: -30px;
+        right: 10px;
+        z-index: 9999;
+        pointer-events: none;
+}
+.deng-box1 .deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 5s infinite ease-in-out;
+        box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
+}
+.deng {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        margin: 50px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.8);
+        border-radius: 50% 50%;
+        -webkit-transform-origin: 50% -100px;
+        -webkit-animation: swing 3s infinite ease-in-out;
+        box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
+}
+.deng-a {
+        width: 100px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: 12px 8px 8px 10px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+}
+.deng-b {
+        width: 45px;
+        height: 90px;
+        background: #d8000f;
+        background: rgba(216, 0, 15, 0.1);
+        margin: -2px 8px 8px 26px;
+        border-radius: 50% 50%;
+        border: 2px solid #dc8f03;
+}
+.xian {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+        width: 2px;
+        height: 20px;
+        background: #dc8f03;
+}
+.shui-a {
+        position: relative;
+        width: 5px;
+        height: 20px;
+        margin: -5px 0 0 59px;
+        -webkit-animation: swing 4s infinite ease-in-out;
+        -webkit-transform-origin: 50% -45px;
+        background: #ffa500;
+        border-radius: 0 0 5px 5px;
+}
+.shui-b {
+        position: absolute;
+        top: 14px;
+        left: -2px;
+        width: 10px;
+        height: 10px;
+        background: #dc8f03;
+        border-radius: 50%;
+}
+.shui-c {
+        position: absolute;
+        top: 18px;
+        left: -2px;
+        width: 10px;
+        height: 35px;
+        background: #ffa500;
+        border-radius: 0 0 0 5px;
+}
+.deng:before {
+        position: absolute;
+        top: -7px;
+        left: 29px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        z-index: 999;
+        border-radius: 5px 5px 0 0;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+.deng:after {
+        position: absolute;
+        bottom: -7px;
+        left: 10px;
+        height: 12px;
+        width: 60px;
+        content: " ";
+        display: block;
+        margin-left: 20px;
+        border-radius: 0 0 5px 5px;
+        border: solid 1px #dc8f03;
+        background: #ffa500;
+        background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
+}
+.deng-t {
+        font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
+        font-size: 3.2rem;
+        color: #dc8f03;
+        font-weight: bold;
+        line-height: 85px;
+        text-align: center;
+}
+.night .deng-t, 
+.night .deng-box, 
+.night .deng-box1 {
+        background: transparent !important;
+}
+@-moz-keyframes swing {
+        0% {
+                -moz-transform: rotate(-10deg)
+        }
+        50% {
+                -moz-transform: rotate(10deg)
+        }
+ 
+        100% {
+                -moz-transform: rotate(-10deg)
+        }
+}
+@-webkit-keyframes swing {
+        0% {
+                -webkit-transform: rotate(-10deg)
+        }
+        50% {
+                -webkit-transform: rotate(10deg)
+        }
+        100% {
+                -webkit-transform: rotate(-10deg)
+        }
+}
+</style>
+<!--- 春节灯笼结束 --->
+  </body>
+</html>
